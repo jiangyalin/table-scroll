@@ -1,0 +1,78 @@
+.table-box {
+  position: relative;
+  width: 0px;
+  padding-top: 18px;
+  box-sizing: content-box;
+}
+.table-box > .table-content {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 1px;
+  box-sizing: content-box;
+}
+.table-box > .table-content > table {
+  width: auto;
+  border: 1px solid #CCCCCC;
+  border-spacing:0;
+  border-collapse: collapse;
+}
+.table-box > .table-content > table tr {
+  height: 40px;
+}
+.table-box > .table-content > table td,
+.table-box > .table-content > table th {
+  text-align: center;
+  min-width: 100px;
+}
+.table-box > .table-content > table th {
+  background: #F2F2F2;
+}
+.table-box > .table-content > table tr:not(:last-child) {
+  border-bottom: 1px solid #CCCCCC;
+}
+.table-box > .table-content > table td:not(:last-child),
+.table-box > .table-content > table th:not(:last-child) {
+  border-right: 1px solid #CCCCCC;
+}
+.table-box > .table-scroll {
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  -webkit-user-select: none;
+}
+.table-box > .table-scroll > .table-scroll-left,
+.table-box > .table-scroll > .table-scroll-right {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  background: #F2F2F2;
+  text-align: center;
+  line-height: 18px;
+  border: 1px solid #CCCCCC;
+  float: left;
+  color: #999999;
+  z-index: 1;
+  cursor: default;
+  box-sizing: border-box;
+}
+.table-box > .table-scroll > .table-scroll-right {
+  float: right;
+}
+.table-box > .table-scroll > .table-scroll-bar-bg {
+  position: absolute;
+  width: 100%;
+  padding: 0 22px;
+  height: 18px;
+  background: #F5F4F4 content-box;
+  box-sizing: border-box;
+}
+.table-box > .table-scroll > .table-scroll-bar-bg > .table-scroll-bar {
+  width: 0;
+  height: 100%;
+  background: #C1C1C1 content-box;
+  box-sizing: border-box;
+}
+.table-box > .table-scroll > .table-scroll-bar-bg > .table-scroll-bar:hover {
+  background-color: #A9A9A9;
+}

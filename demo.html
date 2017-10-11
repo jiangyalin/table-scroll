@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/table-scroll.css" />
+</head>
+<body>
+    <div class="table-box" id="table">
+        <div class="table-content">
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="js/table-scroll.js"></script>
+    <script>
+        //表格滚动
+        /**
+         *
+         * @param option : object
+         *         option.element : selector 目标表格，推荐用id
+         *         option.tableWidth? : number 表格可视的宽度,设置.table-content的宽
+         *         option.scrollWidth? : number 滚动条宽度,设置.table-scroll-bar的宽
+         * @author yaoxiao
+         */
+        tableScroll({
+            element:'#table',
+            tableWidth:500,
+        });
+    </script>
+</body>
+</html>
