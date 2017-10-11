@@ -40,7 +40,7 @@ js代码如下：
          *         option.element : selector 目标表格，推荐用id
          *         option.tableWidth? : number 表格可视的宽度,设置.table-content的宽
          *         option.scrollWidth? : number 滚动条宽度,设置.table-scroll-bar的宽
-         * @author yaoxiao
+         * 
          */
         tableScroll({
             element:'#table',   //指定table-box的dom节点
